@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image:url;("https://i.pinimg.com/originals/82/53/c4/8253c42a47180ca45c2b8e5d3905731a.png");
+  min-height: 90%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">INICIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">SOBRE NOS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MUSICAS E ARTISTAS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CADASTRO</a>
+    </div>
+  </div>
+</div>
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="inicio">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Seu encontro diario com a musica</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Listener</span>
+  </div>
+</header>
+
+<div class="w3-sand w3-grayscale w3-large">
+
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SOBRE O THE LISTENER</span></h5>
+    <p>O the Listener foi um site criado para conectar a musica e o usuario aproximando voçe dos seus artistas favoritos!</p>
+    <p>Aqui voçe ouve musica boa, acompanha as letras e canta junto quando e onde quiser.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+    </div>
+    <img src="https://cdn.dribbble.com/users/824356/screenshots/14722892/spotify_redesign_-_lyrics.png?compress=1&resize=400x300&vertical=top" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<div class="w3-container" id="musica e artistas">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MUSICAS E ARTISTAS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMusicaeArtistas(event, 'Musica');" id="myLink">
+        <div class="w3-col s6 tablink">Musica</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMusicaeArtistas(event, 'Artistas');">
+        <div class="w3-col s6 tablink">Artistas</div>
+      </a>
+    </div>
+
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ESTAMOS SEMPRE ONLINE</span></h5>
+    <p>Voce pode nos encontrar a qualquer parte do seu dia, e em qualquer lugar.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3y93EtQWcqT53Fo616XhERChnrQdZJj3jGg&usqp=CAU" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Importante!</span>O site e uma iniciativa gratuita, entao, em caso de problemas tenha paciencia. Resolveremos logo!</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required nome="Nome"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantas pessoas usam a conta" required name="Usuarios"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Feedback" required name="Feedback"></p>
+      <p><button class="w3-button w3-black" type="submit">ENVIAR FEEDBACK</button></p>
+    </form>
+  </div>
+</div>
+
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+
+</body>
+</html>
