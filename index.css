@@ -1,0 +1,49 @@
+<div id="Musica" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Pop</h5>
+      <p class="w3-text-grey">Musicas mais populares que estao bombando nas radios</p><br>
+    
+      <h5>Rock</h5>
+      <p class="w3-text-grey">Os classicos do rock para animar seu dia</p><br>
+    
+      <h5>Funk</h5>
+      <p class="w3-text-grey">Ritmo contagiante para voce se soltar e cair na pista de dança</p><br>
+    
+      <h5>R&B</h5>
+      <p class="w3-text-grey">Perfeito para quem quer uma noite calma e relaxante</p><br>
+    
+      <h5>Sertanejo</h5>
+      <p class="w3-text-grey">Para todos que gostam de uma sofrencia</p>
+</div>
+
+<div id="Artistas" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Lana Del Rey</h5>
+      <p class="w3-text-grey">Ouvir Lana Del Rey</p><br>
+    
+      <h5>Arca</h5>
+      <p class="w3-text-grey">Ouvir Arca</p><br>
+    
+      <h5>Rex Orange Country</h5>
+      <p class="w3-text-grey">Ouvir Rex Orange Country</p><br>
+    
+      <h5>Rainbow Kitten Flavour</h5>
+      <p class="w3-text-grey">Ouvir Rainbow Kitten Flavour</p><br>
+    
+      <h5>AnaVitoria</h5>
+      <p class="w3-text-grey">Ouvir AnaVitoria</p>
+</div>  
+
+function openMusicaeArtistas(evt, musicaeartistasName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("Musica e Artistas");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    }
+    document.getElementById(musicaeartistasName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  }
+  document.getElementById("myLink").click();
+  </script>
